@@ -35,8 +35,7 @@ body > .container {
 }
 .soft-logo img,.soft-logo{
 	margin: 0 auto 15px;
-	width: 240px;
-	height: 60px;
+
 }
 .sub {
 	position: absolute;
@@ -362,11 +361,7 @@ span>img{
 }
 .soft-logo img,.soft-logo{
 	margin: 0 auto 6px;
-    width: 180px;
-	height: 45px;
-}
-.soft-logo+img {
-    width: 240px;
-    height: 60px;
+    width: 280px;
+	height: auto;
 }
 }

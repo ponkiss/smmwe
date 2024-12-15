@@ -138,53 +138,53 @@ address {
 	vertical-align: middle;
 }
 .btnicon.plus{
-	background: url(assets/img/btn/btn_plus_w.svg) no-repeat;
+	background: url(../img/btn/btn_plus_w.svg) no-repeat;
 }
 .btnicon.minus{
-	background: url(assets/img/btn/btn_minus_w.svg) no-repeat;
+	background: url(../img/btn/btn_minus_w.svg) no-repeat;
 }
 .btnicon.Lbtn{
-	background: url(assets/img/btn/btn_L_w.svg) no-repeat;
+	background: url(../img/btn/btn_L_w.svg) no-repeat;
 }
 .btnicon.ZLbtn{
-	background: url(assets/img/btn/btn_ZL_w.svg) no-repeat;
+	background: url(../img/btn/btn_ZL_w.svg) no-repeat;
 }
 .btnicon.Rbtn{
-	background: url(assets/img/btn/btn_R_w.svg) no-repeat;
+	background: url(../img/btn/btn_R_w.svg) no-repeat;
 }
 .btnicon.ZRbtn{
-	background: url(assets/img/btn/btn_ZR_w.svg) no-repeat;
+	background: url(../img/btn/btn_ZR_w.svg) no-repeat;
 }
 
 @media screen and (max-width: 768px) {
-.btnicon.plus{ background: url(assets/img/btn/btn_plus.svg) no-repeat;}
-.btnicon.minus{ background: url(assets/img/btn/btn_minus.svg) no-repeat;}
-.btnicon.Lbtn{ background: url(assets/img/btn/btn_L.svg) no-repeat;}
-.btnicon.ZLbtn{ background: url(assets/img/btn/btn_ZL.svg) no-repeat;}
-.btnicon.Rbtn{ background: url(assets/img/btn/btn_R.svg) no-repeat;}
-.btnicon.ZRbtn{ background: url(assets/img/btn/btn_ZR.svg) no-repeat;}
+.btnicon.plus{ background: url(../img/btn/btn_plus.svg) no-repeat;}
+.btnicon.minus{ background: url(../img/btn/btn_minus.svg) no-repeat;}
+.btnicon.Lbtn{ background: url(../img/btn/btn_L.svg) no-repeat;}
+.btnicon.ZLbtn{ background: url(../img/btn/btn_ZL.svg) no-repeat;}
+.btnicon.Rbtn{ background: url(../img/btn/btn_R.svg) no-repeat;}
+.btnicon.ZRbtn{ background: url(../img/btn/btn_ZR.svg) no-repeat;}
 .no-inlinesvg .btnicon.plus{
-	background: url(assets/img/btn/btn_plus.png) no-repeat;
+	background: url(../img/btn/btn_plus.png) no-repeat;
 	background-size: 18px 18px;
 	}
 .no-inlinesvg .btnicon.minus{
-	background: url(assets/img/btn/btn_minus.png) no-repeat;
+	background: url(../img/btn/btn_minus.png) no-repeat;
 	background-size: 18px 18px;
 	}
 .no-inlinesvg .btnicon.Lbtn{
-	background: url(assets/img/btn/btn_L.png) no-repeat;
+	background: url(../img/btn/btn_L.png) no-repeat;
 	background-size: 18px 18px;
 	}
 .no-inlinesvg .btnicon.ZLbtn{
-	background: url(assets/img/btn/btn_ZL.png) no-repeat;
+	background: url(../img/btn/btn_ZL.png) no-repeat;
 	background-size: 18px 18px;
 	}
 .no-inlinesvg .btnicon.Rbtn{
-	background: url(assets/img/btn/btn_R.png) no-repeat;
+	background: url(../img/btn/btn_R.png) no-repeat;
 	background-size: 18px 18px;
 	}
 .no-inlinesvg .btnicon.ZRbtn{
-	background: url(assets/img/btn/btn_ZR.png) no-repeat;
+	background: url(../img/btn/btn_ZR.png) no-repeat;
 	background-size: 18px 18px;
 }
 }
