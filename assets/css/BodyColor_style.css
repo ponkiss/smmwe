@@ -1,0 +1,303 @@
+@charset "utf-8";
+
+div.bg02, div.bg03, div.bg04, div.bg07, div.bg08, div.bg09,div.bg01, div.bg05, div.bg06 {
+	width: 694px;
+	margin: 0 auto;
+}
+.bg01 {background: #FFaea8;}
+.bg02 {background: #F8DF91;}
+.bg03 {background: #F8E995;}
+.bg04 {background: #70E9A7;}
+.bg05 {background: #C6FF8C;}
+.bg06 {background: #ADD2EB;}
+.bg07 {background: #9FC2FF;}
+.bg08 {background: #ACA3FB;}
+.bg09 {background: #866400 url(../img/bg_character.png) repeat;}
+.bg10 {
+	position: relative;
+	background: #7d9be6;
+}
+.page-00 {background: #ffd300}
+.page-01, .box_list01 dt {background: #FF5154;}
+.page-02 {background: #f68900;}
+.page-03 {background: #FAB500;}
+a.page-03,.page-icon.page-03 {background: #FFCE00;}
+.page-04, .box_list04 dt {background: #2fa068;}
+.page-05 {background: #4EB91A;}
+.page-06 {background: #0096DC;}
+.page-07 {background: #2C63D3;}
+.page-08 {background: #654CE3;}
+.page-09 {background: #C38500;}
+
+.page-00.select:before,.page-01.select:before,.page-02.select:before,.page-03.select:before,.page-04.select:before,.page-05.select:before,.page-06.select:before,.page-07.select:before,.page-08.select:before,.page-09.select:before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    margin-left: -10px;
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 10px 10px 0 10px;
+    border-color: #fff transparent transparent transparent;
+    z-index: 20;
+}
+.page-00.select:after {
+    position: absolute;
+	display: block;
+    padding: 5px;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #333;
+    font-size: 14px;
+    z-index: 5;
+    content: "Home";
+    top: -36px;
+    left: 0%;
+    width: 100px;
+    height: 20px;
+}
+.page-01.select:after {
+    position: absolute;
+    display: block;
+	margin-left: -5px;
+    padding: 5px 3px 4px;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #333;
+    font-size: 14px;
+    z-index: 5;
+    content: "Create";
+    top: -36px;
+    left: -50%;
+    width: 90px;
+    height: 20px;
+}
+.page-02.select:after {
+    position: absolute;
+    display: block;
+	margin-left: -5px;
+    padding: 5px 3px 4px;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #333;
+    font-size: 14px;
+    z-index: 5;
+    content: "Techniques";
+    top: -36px;
+    left: -80%;
+    width: 110px;
+    height: 20px;
+}
+.page-03.select:after {
+    position: absolute;
+    display: block;
+	margin-left: -5px;
+    padding: 5px 3px 4px;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #333;
+    font-size: 14px;
+    z-index: 5;
+    content: "Controlling Mario";
+    top: -36px;
+    left: -120%;
+    width: 150px;
+    height: 20px;
+}
+.page-04.select:after {
+    position: absolute;
+    display: block;
+	margin-left: -5px;
+    padding: 5px 3px 4px;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #333;
+    font-size: 14px;
+    z-index: 5;
+    content: "Main Menu";
+    top: -36px;
+    left: -80%;
+    width: 120px;
+    height: 20px;;
+}
+.page-05.select:after {
+    position: absolute;
+    display: block;
+	margin-left: -5px;
+    padding: 5px 3px 4px;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #333;
+    font-size: 14px;
+    z-index: 5;
+    content: "Upload";
+    top: -36px;
+    left: -60%;
+    width: 100px;
+    height: 20px;
+}
+.page-06.select:after {
+    position: absolute;
+    display: block;
+	margin-left: -5px;
+    padding: 5px 3px 4px;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #333;
+    font-size: 14px;
+    z-index: 5;
+    content: "Play";
+    top: -36px;
+    left: -50%;
+    width: 90px;
+    height: 20px;
+}
+.page-07.select:after {
+    position: absolute;
+    display: block;
+	margin-left: -5px;
+    padding: 5px 3px 4px;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #333;
+    font-size: 14px;
+    z-index: 5;
+    content: "User Info";
+    top: -36px;
+    left: -80%;
+    width: 110px;
+    height: 20px;
+}
+.page-08.select:after {
+    position: absolute;
+    display: block;
+	margin-left: -5px;
+    padding: 5px 3px 4px;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #333;
+    font-size: 14px;
+    z-index: 5;
+    content: "Q & A";
+    top: -36px;
+    left: -50%;
+    width: 90px;
+    height: 20px;
+}
+.page-09.select:after {
+    position: absolute;
+    display: block;
+    padding: 5px 3px 4px;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #333;
+    font-size: 14px;
+    z-index: 5;
+    content: "Credits";
+    top: -36px;
+	right: 0%;
+    width: 90px;
+    height: 20px;
+}
+.page-top.page-01 {background: #ef5e6c url(../img/bnr_page_01_course.gif) repeat-x bottom;}
+.page-top.page-02 {background: #f68900 url(../img/bnr_page_02_course.gif) repeat-x bottom;}
+.page-top.page-03 {background: #facd00 url(../img/bnr_page_03_course.gif) repeat-x bottom;}
+.page-top.page-04 {background: #19b364 url(../img/bnr_page_04_course.gif) repeat-x bottom;}
+.page-top.page-05 {background: #4EB91A url(../img/bnr_page_05_course.gif) repeat-x bottom;}
+.page-top.page-06 {background: #0096DC url(../img/bnr_page_06_course.gif) repeat-x bottom;}
+.page-top.page-07 {background: #2C63D3 url(../img/bnr_page_07_course.gif) repeat-x bottom;}
+.page-top.page-08 {background: #654CE3 url(../img/bnr_page_08_course.gif) repeat-x bottom;}
+
+.block {
+	width: 100%;
+	height: 64px;
+}
+.block.page-00{
+	background: #ffd100 url(../img/img_page_00_block.gif) repeat top;
+	background-size: 32px 32px;
+}
+.block.page-01{
+	background: url(../img/img_page_01_block.gif) repeat bottom;
+	background-size: 32px 32px;
+}
+.block.page-02 {
+	background: url(../img/img_page_02_block.gif) repeat bottom;
+	background-size: 32px 32px;
+}
+.block.page-03 {
+	background: url(../img/img_page_03_block.gif) repeat bottom;
+	background-size: 32px 32px;
+}
+.block.page-04 {
+	background: url(../img/img_page_04_block.gif) repeat bottom;
+	background-size: 32px 32px;
+}
+.block.page-05 {
+	background: url(../img/img_page_05_block.gif) repeat bottom;
+	background-size: 32px 32px;
+}
+.block.page-06 {
+	background: url(../img/img_page_06_block.gif) repeat bottom;
+	background-size: 32px 32px;
+}
+.block.page-07 {
+	background: url(../img/img_page_07_block.gif) repeat bottom;
+	background-size: 32px 32px;
+}
+.block.page-08 {
+	background: url(../img/img_page_08_block.gif) repeat bottom;
+	background-size: 32px 32px;
+}
+.block.page-10 {
+	background: url(../img/img_blockM1.png) repeat bottom;
+	background-size: 32px 32px;
+}
+
+.color_02 {color: #FF7000;}
+.color_01 {color: #FF4935;}
+.color_04 {color: #167000;}
+.color_05 {color: #007C25;}
+.color_06 {color: #0096DC;}	
+.color_07 {color: #1C3886;}
+
+.dot02 {border-top: 2px dotted #FFB448;}
+.dot03 {border-top: 2px dotted #facd00;}
+.dot04 {border-top: 2px dotted #00B574;}
+.dot05 {border-top: 2px dotted #69D000;}
+.dot06 {
+	margin-top: 40px;
+	border-top: 2px dotted #ADD2EB;
+	text-align: center;
+}
+.topic-box.dot04, .topic-box.dot05 {
+	padding: 30px 10px;
+}
+.topic-box.dotless {
+	margin-top: 0px;
+	padding: 30px 10px;
+}
+
+@media screen and (max-width: 768px) {
+div.bg01, div.bg02, div.bg03, div.bg04, div.bg05, div.bg06, div.bg07, div.bg08, div.bg09 {
+	width: 90%;
+	max-width: 694px;
+}
+.page-top.page-01,.page-top.page-02,.page-top.page-03,.page-top.page-04,.page-top.page-05,.page-top.page-06,.page-top.page-07,.page-top.page-08,.page-top.page-09{
+	background-size: contain;
+}
+}
+
+@media screen and (max-width: 480px) {
+div.bg01, div.bg02, div.bg03, div.bg04, div.bg05, div.bg06, div.bg07, div.bg08, div.bg09 {
+	width: 95%;
+}
+.page-02.select:after {
+    left: auto;
+	right: 0;
+}
+.page-03.select:after {
+    left: 0;
+}
+}

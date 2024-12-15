@@ -1,117 +1,154 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Super Mario Maker: World Engine</title>
-        <meta name="title" content="Super Mario Maker: World Engine" />
-        <meta name="description" content="Placeholder" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://smmwe.xyz/about" />
-        <meta property="og:title" content="ponkis.xyz" />
-        <meta property="og:description" content="Designer, programmer and content creator." />
-        <meta property="og:image" content="https://ponkis.xyz/assets/images/banner.jpg" />
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://ponkis.xyz/about" />
-        <meta property="twitter:title" content="ponkis.xyz" />
-        <meta property="twitter:description" content="Designer, programmer and content creator." />
-        <meta property="twitter:image" content="https://ponkis.xyz/assets/images/banner.jpg" />
-        <link id="desktop-stylesheet" rel="stylesheet" href="/assets/css/main.css" />
-        <link id="mobile-stylesheet" rel="stylesheet" href="/assets/css/mobile.css" media="only screen and (max-width: 768px)" />
-        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-        <script src="/assets/js/main.js" defer></script>
-    </head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Super Mario Maker: World Engine</title>
-        <style>
-            /* General */
-            body {
-                margin: 0;
-                background-color: #ffcc00;
-                font-family: Arial, sans-serif;
-                text-align: center;
-            }
-            
-            /* Layout */
-            .container {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                padding: 20px;
-            }
-
-            .header {
-                font-size: 3rem;
-                font-weight: bold;
-                color: black;
-                margin-bottom: 20px;
-            }
-
-            .buttons {
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                gap: 20px;
-                max-width: 900px;
-            }
-            
-            .button {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                background-color: #ff6666;
-                border-radius: 15px;
-                height: 100px;
-                font-size: 1.5rem;
-                color: white;
-                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-                cursor: pointer;
-                transition: transform 0.2s;
-            }
-
-            .button:hover {
-                transform: scale(1.1);
-            }
-
-            /* Colors for different buttons */
-            .green { background-color: #6ecc6e; }
-            .blue { background-color: #6699ff; }
-            .white { background-color: #f0f0f0; color: black; }
-
-            /* Footer */
-            .footer {
-                position: absolute;
-                bottom: 0;
-                width: 100%;
-                padding: 10px;
-                background-color: #7d5a00;
-                color: white;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <!-- Header -->
-            <div class="header">Super Mario Maker<br>Play Guide</div>
-
-            <!-- Buttons -->
-            <div class="buttons">
-                <div class="button red">Create</div>
-                <div class="button green">Upload</div>
-                <div class="button blue">Play</div>
-                <div class="button white">Techniques</div>
-                <div class="button white">Controlling Mario</div>
-                <div class="button white">Main Menu</div>
-                <div class="button white">User Info</div>
-                <div class="button white">Q&A</div>
-                <div class="button white">Credits</div>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super Mario Maker: World Engine</title>
+    <meta name="title" content="Super Mario Maker™️: World Engine" />
+    <meta name="description" content="Placeholder" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://smmwe.vercel.app" />
+    <meta property="og:title" content="Super Mario Maker™️: World Engine" />
+    <meta property="og:description" content="Super Mario Maker™️: World Engine es un Fangame basado en la saga Super Mario Maker™️ donde busca replicar la experiencia de crear, jugar y compartir niveles de Mario hechos por su comunidad a dispositivos Windows y Android." />
+    <meta property="og:image" content="https://smmwe.vercel.app/assets/images/banner.jpg" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://smmwe.vercel.app" />
+    <meta property="twitter:title" content="Super Mario Maker™️: World Engine" />
+    <meta property="twitter:description" content="Super Mario Maker™️: World Engine es un Fangame basado en la saga Super Mario Maker™️ donde busca replicar la experiencia de crear, jugar y compartir niveles de Mario hechos por su comunidad a dispositivos Windows y Android." />
+    <meta property="twitter:image" content="https://smmwe.vercel.app/assets/images/banner.jpg" />
+    <link rel="stylesheet" href="assets/css/default.css" />
+    <link rel="stylesheet" href="assets/css/BodyTop_style.css" />
+    <link rel="stylesheet" href="assets/css/BodyColor_style.css" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+</head>
+<body onclick="" onunload="">
+    <div class="container">
+        <div class="main">
+            <div class="title-space">
+                <a href="index.html" class="Logo de Super Mario Maker™️: World Engine">
+                    <img src="assets/img/logo.png">
+                </a>
+            </div>
+            <ul class="button-space01">
+                <li class="btn-05" onmouseenter="Cmn.onDownBtn(this,&quot;btn-01 select&quot;)" onmouseleave="Cmn.onUpBtn(this,&quot;btn-01&quot;)" ontouchstart="Cmn.onDownBtn(this,&quot;btn-01 select&quot;)" ontouchend="Cmn.onUpBtn(this,&quot;btn-01&quot;)" ontouchcancel="Cmn.onUpBtn(this, &quot;btn-01&quot;)">
+                    <span data-msgid="textbox_id-3"><a href="/discord/index.html">
+                            <div class="anim-icon"></div> <span class="font_btn"> Descarga </span>
+                        </a></span>
+                </li>
+                <li class="btn-01" onmouseenter="Cmn.onDownBtn(this,&quot;btn-05 select&quot;)" onmouseleave="Cmn.onUpBtn(this,&quot;btn-05&quot;)" ontouchstart="Cmn.onDownBtn(this,&quot;btn-05 select&quot;)" ontouchend="Cmn.onUpBtn(this,&quot;btn-05&quot;)" ontouchcancel="Cmn.onUpBtn(this, &quot;btn-05&quot;)">
+                    <span data-msgid="textbox_id-4"><a href="/about/index.html">
+                            <div class="anim-icon"></div> <span class="font_btn"> Sobre SMM: WE </span>
+                        </a></span>
+                </li>
+                <li class="btn-06" onmouseenter="Cmn.onDownBtn(this,&quot;btn-06 select&quot;)" onmouseleave="Cmn.onUpBtn(this,&quot;btn-06&quot;)" ontouchstart="Cmn.onDownBtn(this,&quot;btn-06 select&quot;)" ontouchend="Cmn.onUpBtn(this,&quot;btn-06&quot;)" ontouchcancel="Cmn.onUpBtn(this, &quot;btn-06&quot;)">
+                    <span data-msgid="textbox_id-5"><a href="/discord/index.html">
+                            <div class="anim-icon"></div> <span class="font_btn"> Discord </span>
+                        </a></span>
+                </li>
+            </ul>
+            <ul class="button-space02">
+                <li class="btn" onmouseenter="Cmn.onDownBtn(this,&quot;btn select&quot;)" onmouseleave="Cmn.onUpBtn(this,&quot;btn&quot;)" ontouchstart="Cmn.onDownBtn(this,&quot;btn select&quot;)" ontouchend="Cmn.onUpBtn(this,&quot;btn&quot;)" ontouchcancel="Cmn.onUpBtn(this, &quot;btn&quot;)">
+                    <span data-msgid="textbox_id-6"><a href="/stages/index.html">
+                            <div class="btn-icon">
+                                <div class="page-icon page-08"> <img src="assets/img/ico_play.png"> </div>
+                            </div> <span class="font_btn_w"> Niveles Mundiales </span>
+                        </a></span>
+                </li>
+                <li class="btn" onmouseenter="Cmn.onDownBtn(this,&quot;btn select&quot;)" onmouseleave="Cmn.onUpBtn(this,&quot;btn&quot;)" ontouchstart="Cmn.onDownBtn(this,&quot;btn select&quot;)" ontouchend="Cmn.onUpBtn(this,&quot;btn&quot;)" ontouchcancel="Cmn.onUpBtn(this, &quot;btn&quot;)">
+                    <span data-msgid="textbox_id-7"><a href="/engine/index.html">
+                            <div class="btn-icon">
+                                <div class="page-icon page-06"> <img src="assets/img/discord.png"> </div>
+                            </div> <span class="font_btn_w"> Engine Kingdom </span>
+                        </a></span>
+                </li>
+                <li class="btn" onmouseenter="Cmn.onDownBtn(this,&quot;btn select&quot;)" onmouseleave="Cmn.onUpBtn(this,&quot;btn&quot;)" ontouchstart="Cmn.onDownBtn(this,&quot;btn select&quot;)" ontouchend="Cmn.onUpBtn(this,&quot;btn&quot;)" ontouchcancel="Cmn.onUpBtn(this, &quot;btn&quot;)">
+                    <span data-msgid="textbox_id-8"><a href="/about2/index.html">
+                            <div class="btn-icon">
+                                <div class="page-icon page-07"> <img src="assets/img/ico_page_07_user.svg"> </div>
+                            </div> <span class="font_btn_w"> Sobre los Creadores </span>
+                        </a></span>
+                </li>
+            </ul>
+            <ul class="button-space02">
+                <li class="btn" onmouseenter="Cmn.onDownBtn(this,&quot;btn select&quot;)" onmouseleave="Cmn.onUpBtn(this,&quot;btn&quot;)" ontouchstart="Cmn.onDownBtn(this,&quot;btn select&quot;)" ontouchend="Cmn.onUpBtn(this,&quot;btn&quot;)" ontouchcancel="Cmn.onUpBtn(this, &quot;btn&quot;)">
+                    <span data-msgid="textbox_id-9"><a href="/github/index.html">
+                            <div class="btn-icon">
+                                <div class="page-icon page-07"> <img src="assets/img/git.png"> </div>
+                            </div> <span class="font_btn_w"> GitHub </span>
+                        </a></span>
+                </li>
+                <li class="btn" onmouseenter="Cmn.onDownBtn(this,&quot;btn select&quot;)" onmouseleave="Cmn.onUpBtn(this,&quot;btn&quot;)" ontouchstart="Cmn.onDownBtn(this,&quot;btn select&quot;)" ontouchend="Cmn.onUpBtn(this,&quot;btn&quot;)" ontouchcancel="Cmn.onUpBtn(this, &quot;btn&quot;)">
+                    <span data-msgid="textbox_id-10"><a href="index.html">
+                            <div class="btn-icon">
+                                <div class="page-icon page-08"> <img src="assets/img/ico_page_09_question.png"> </div>
+                            </div> <span class="font_btn_w"> Placeholder </span>
+                        </a></span>
+                </li>
+                <li class="btn" onmouseenter="Cmn.onDownBtn(this,&quot;btn select&quot;)" onmouseleave="Cmn.onUpBtn(this,&quot;btn&quot;)" ontouchstart="Cmn.onDownBtn(this,&quot;btn select&quot;)" ontouchend="Cmn.onUpBtn(this,&quot;btn&quot;)" ontouchcancel="Cmn.onUpBtn(this, &quot;btn&quot;)">
+                    <a href="index.html">
+                        <div class="btn-icon">
+                            <div class="page-icon page-09">
+                                <img src="assets/img/ico_page_09_star.png">
+                            </div>
+                        </div>
+                        <span data-msgid="textbox_id-2" class="font_btn_w">Placeholder</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="button-space03">
+                <li class="btn" onmouseenter="Cmn.onDownBtn(this,&quot;btn select&quot;)" onmouseleave="Cmn.onUpBtn(this,&quot;btn&quot;)" ontouchstart="Cmn.onDownBtn(this,&quot;btn select&quot;)" ontouchend="Cmn.onUpBtn(this,&quot;btn&quot;)" ontouchcancel="Cmn.onUpBtn(this, &quot;btn&quot;)">
+                    <a href="/legal/privacy/index.html">
+                        <span data-msgid="textbox_id-1" class="font_btn_w"><img src="assets/img/ico_page_10_safe.png"> Información Importante</span>
+                    </a>
+                </li>
+                <li class="btn" onmouseenter="Cmn.onDownBtn(this,&quot;btn select&quot;)" onmouseleave="Cmn.onUpBtn(this,&quot;btn&quot;)" ontouchstart="Cmn.onDownBtn(this,&quot;btn select&quot;)" ontouchend="Cmn.onUpBtn(this,&quot;btn&quot;)" ontouchcancel="Cmn.onUpBtn(this, &quot;btn&quot;)">
+                    <a href="/legal/about/index.html">
+                        <span data-msgid="textbox_id-14" class="font_btn_w">Sobre la Página</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="sub">
+            <img class="subL" src="assets/img/img_yamamuraL.gif">
+            <img class="subR" src="assets/img/img_mashiko_06.gif">
+        </div>
+        <div class="index footer">
+            <div class="block page-00">
+            </div>
+            <div class="footer-link">
+                <div class="footer-icon">
+                    <div>
+                        <a href="/discord/index.html" class="page-05" onmouseenter="Cmn.onDownBtn(this,&quot;page-01 select&quot;)" onmouseleave="Cmn.onUpBtn(this,&quot;page-01&quot;)" ontouchstart="Cmn.onDownBtn(this,&quot;page-01 select&quot;)" ontouchend="Cmn.onUpBtn(this,&quot;page-01&quot;)" ontouchcancel="Cmn.onUpBtn(this, &quot;page-01&quot;)">
+                            <img class="link-icon" src="assets/img/ico_page_01_edit.png" alt="">
+                        </a>
+                        <a href="page_05.html" class="page-01" onmouseenter="Cmn.onDownBtn(this,&quot;page-05 select&quot;)" onmouseleave="Cmn.onUpBtn(this,&quot;page-05&quot;)" ontouchstart="Cmn.onDownBtn(this,&quot;page-05 select&quot;)" ontouchend="Cmn.onUpBtn(this,&quot;page-05&quot;)" ontouchcancel="Cmn.onUpBtn(this, &quot;page-05&quot;)">
+                            <img class="link-icon" src="assets/img/ico_page_06_play.svg" alt="">
+                        </a>
+                        <a href="page_06.html" class="page-06" onmouseenter="Cmn.onDownBtn(this,&quot;page-06 select&quot;)" onmouseleave="Cmn.onUpBtn(this,&quot;page-06&quot;)" ontouchstart="Cmn.onDownBtn(this,&quot;page-06 select&quot;)" ontouchend="Cmn.onUpBtn(this,&quot;page-06&quot;)" ontouchcancel="Cmn.onUpBtn(this, &quot;page-06&quot;)">
+                            <img class="link-icon" src="assets/img/discord.png" alt="">
+                        </a>
+                        <a href="page_02.html" class="page-08" onmouseenter="Cmn.onDownBtn(this,&quot;page-02 select&quot;)" onmouseleave="Cmn.onUpBtn(this,&quot;page-02&quot;)" ontouchstart="Cmn.onDownBtn(this,&quot;page-02 select&quot;)" ontouchend="Cmn.onUpBtn(this,&quot;page-02&quot;)" ontouchcancel="Cmn.onUpBtn(this, &quot;page-02&quot;)">
+                            <img class="link-icon" src="assets/img/ico_play.png" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="page_04.html" class="page-07" onmouseenter="Cmn.onDownBtn(this,&quot;page-04 select&quot;)" onmouseleave="Cmn.onUpBtn(this,&quot;page-04&quot;)" ontouchstart="Cmn.onDownBtn(this,&quot;page-04 select&quot;)" ontouchend="Cmn.onUpBtn(this,&quot;page-04&quot;)" ontouchcancel="Cmn.onUpBtn(this, &quot;page-04&quot;)">
+                            <img class="link-icon" src="assets/img/ico_page_07_user.svg" alt="">
+                        </a>
+                        <a href="page_07.html" class="page-07" onmouseenter="Cmn.onDownBtn(this,&quot;page-07 select&quot;)" onmouseleave="Cmn.onUpBtn(this,&quot;page-07&quot;)" ontouchstart="Cmn.onDownBtn(this,&quot;page-07 select&quot;)" ontouchend="Cmn.onUpBtn(this,&quot;page-07&quot;)" ontouchcancel="Cmn.onUpBtn(this, &quot;page-07&quot;)">
+                            <img class="link-icon" src="assets/img/git.png" alt="">
+                        </a>
+                        <a href="page_08.html" class="page-08" onmouseenter="Cmn.onDownBtn(this,&quot;page-08 select&quot;)" onmouseleave="Cmn.onUpBtn(this,&quot;page-08&quot;)" ontouchstart="Cmn.onDownBtn(this,&quot;page-08 select&quot;)" ontouchend="Cmn.onUpBtn(this,&quot;page-08&quot;)" ontouchcancel="Cmn.onUpBtn(this, &quot;page-08&quot;)">
+                            <img class="link-icon" src="assets/img/ico_page_09_question.png" alt="">
+                        </a>
+                        <a href="page_09.html" class="page-09" onmouseenter="Cmn.onDownBtn(this,&quot;page-09 select&quot;)" onmouseleave="Cmn.onUpBtn(this,&quot;page-09&quot;)" ontouchstart="Cmn.onDownBtn(this,&quot;page-09 select&quot;)" ontouchend="Cmn.onUpBtn(this,&quot;page-09&quot;)" ontouchcancel="Cmn.onUpBtn(this, &quot;page-09&quot;)">
+                            <img class="link-icon" src="assets/img/ico_page_09_star.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="site-link"><span data-msgid="textbox_id-16"><a href="/legal/about/index.html">SOBRE</a> <a href="legal/privacy/index.html">PRIVACIDAD</a></span></div>
             </div>
         </div>
-
-        <!-- Footer -->
-        <div class="footer">
-            CONTACT | PRIVACY
-        </div>
-    </body>
+    </div>
+</body>
 </html>
