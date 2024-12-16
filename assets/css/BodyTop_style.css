@@ -109,21 +109,21 @@ body {
 }
 
 .btn-01 .anim-icon {
-    background: url(/assets/img/buttons/primary/ico_about01.png) no-repeat;
+    background: url(/assets/images/buttons/primary/ico_about01.png) no-repeat;
     background-position: 50% 5px;
     width: 100%;
     height: 82px;
 }
 
 .btn-05 .anim-icon {
-    background: url(/assets/img/buttons/primary/ico_download01.png) no-repeat;
+    background: url(/assets/images/buttons/primary/ico_download01.png) no-repeat;
     background-position: 50% 5px;
     width: 100%;
     height: 82px;
 }
 
 .btn-06 .anim-icon {
-    background: url(/assets/img/buttons/primary/ico_discord01.png) no-repeat;
+    background: url(/assets/images/buttons/primary/ico_discord01.png) no-repeat;
     background-position: 50% 5px;
     width: 100%;
     height: 82px;
@@ -155,17 +155,17 @@ body {
 }
 
 .btn-01.select .anim-icon {
-    background: url(/assets/img/buttons/primary/ico_about02.png) no-repeat;
+    background: url(/assets/images/buttons/primary/ico_about02.png) no-repeat;
     background-position: 50% 10px;
 }
 
 .btn-05.select .anim-icon {
-    background: url(/assets/img/buttons/primary/ico_download02.png) no-repeat;
+    background: url(/assets/images/buttons/primary/ico_download02.png) no-repeat;
     background-position: 50% 10px;
 }
 
 .btn-06.select .anim-icon {
-    background: url(/assets/img/buttons/primary/ico_discord02.png) no-repeat;
+    background: url(/assets/images/buttons/primary/ico_discord02.png) no-repeat;
     background-position: 50% 10px;
 }
 
