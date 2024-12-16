@@ -118,54 +118,30 @@ a.page-03 {
 
 .block {
     width: 100%;
-    height: 64px;
+    height: 65px;
 }
 
 .block.page-00 {
-    background: #ffd100 url(../img/img_page_00_block.gif) repeat;
+    background: #ffd100 url(../img/img_page_00_block.gif) repeat top;
 }
 
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 768px) {
 
-    div.bg01,
-    div.bg02,
-    div.bg03,
-    div.bg04,
-    div.bg05,
-    div.bg06,
-    div.bg07,
-    div.bg08,
-    div.bg09 {
+    div[class^="bg"] {
         width: 90%;
-        max-width: 694px;
+        max-width: 695px;
     }
 
-    .page-top.page-01,
-    .page-top.page-02,
-    .page-top.page-03,
-    .page-top.page-04,
-    .page-top.page-05,
-    .page-top.page-06,
-    .page-top.page-07,
-    .page-top.page-08,
-    .page-top.page-09 {
+    .page-top[class^="page-"] {
         background-size: contain;
     }
 }
 
 @media screen and (max-width: 480px) {
 
-    div.bg01,
-    div.bg02,
-    div.bg03,
-    div.bg04,
-    div.bg05,
-    div.bg06,
-    div.bg07,
-    div.bg08,
-    div.bg09 {
+    div[class^="bg"] {
         width: 95%;
     }
 
