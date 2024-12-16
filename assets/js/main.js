@@ -1,5 +1,3 @@
-"use strict";
-
 var Cmn = {
     onDownBtn(targetElement, className) {
         if (targetElement && typeof className === "string") {
@@ -19,7 +17,7 @@ var Cmn = {
         }
     },
 
-    switch(switches, pages) {
+    switch (switches, pages) {
         const touchClasses = switches.map(() => ({
             touchstart: "",
             touchend: "",
@@ -30,7 +28,11 @@ var Cmn = {
             const btn = switches[switchId];
             if (!btn) return;
 
-            touchClasses[switchId] = { touchstart: touchstartClass, touchend: touchendClass, active: activeClass };
+            touchClasses[switchId] = {
+                touchstart: touchstartClass,
+                touchend: touchendClass,
+                active: activeClass
+            };
 
             btn.addEventListener("touchstart", () => this.updateClass(btn, touchstartClass));
             btn.addEventListener("touchend", () => this.updateClass(btn, touchendClass));

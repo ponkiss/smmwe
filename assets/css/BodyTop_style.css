@@ -1,6 +1,6 @@
-/* BODY */
-
 @import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
+
+/* BODY */
 
 body {
     background-color: #ffd300;
@@ -50,7 +50,7 @@ body {
 }
 
 .subL {
-    height: 155px;
+    height: 154px;
     vertical-align: bottom;
     padding: 0 20px 0 80px;
     margin-right: 370px;
@@ -109,21 +109,21 @@ body {
 }
 
 .btn-01 .anim-icon {
-    background: url(../img/ico_index_make01.png) no-repeat;
+    background: url(/assets/img/buttons/primary/ico_about01.png) no-repeat;
     background-position: 50% 5px;
     width: 100%;
     height: 82px;
 }
 
 .btn-05 .anim-icon {
-    background: url(../img/ico_index_robot01.png) no-repeat;
+    background: url(/assets/img/buttons/primary/ico_download01.png) no-repeat;
     background-position: 50% 5px;
     width: 100%;
     height: 82px;
 }
 
 .btn-06 .anim-icon {
-    background: url(../img/ico_index_play01.png) no-repeat;
+    background: url(/assets/img/buttons/primary/ico_discord01.png) no-repeat;
     background-position: 50% 5px;
     width: 100%;
     height: 82px;
@@ -155,17 +155,17 @@ body {
 }
 
 .btn-01.select .anim-icon {
-    background: url(../img/ico_index_make02.png) no-repeat;
+    background: url(/assets/img/buttons/primary/ico_about02.png) no-repeat;
     background-position: 50% 10px;
 }
 
 .btn-05.select .anim-icon {
-    background: url(../img/ico_index_robot02.png) no-repeat;
+    background: url(/assets/img/buttons/primary/ico_download02.png) no-repeat;
     background-position: 50% 10px;
 }
 
 .btn-06.select .anim-icon {
-    background: url(../img/ico_index_play02.png) no-repeat;
+    background: url(/assets/img/buttons/primary/ico_discord02.png) no-repeat;
     background-position: 50% 10px;
 }
 
@@ -291,6 +291,8 @@ span>img {
     padding: 3px 0px;
 }
 
+/* MEDIA QUERIES */
+
 @media screen and (max-width: 1080px) {
     .sub {
         width: 100%;
@@ -367,28 +369,23 @@ span>img {
     .button-space01 li a {
         height: 82px;
         padding: 5px 0;
-        border-spacing: 2px 0px;
+        border-spacing: 2px 0;
     }
 
     .btn-01 .anim-icon,
     .btn-05 .anim-icon,
-    .btn-06 .anim-icon {
-        width: 110px;
-        height: auto;
-        display: table-cell;
-        background-position: 0px 7px;
-    }
-
+    .btn-06 .anim-icon,
     .btn-01.select .anim-icon,
     .btn-05.select .anim-icon,
     .btn-06.select .anim-icon {
         width: 110px;
         height: auto;
         display: table-cell;
-        background-position: 0px 10px;
+        background-position: 0 10px;
     }
 
-    .btn .btn-icon {
+    .btn .btn-icon,
+    .btn.select .btn-icon {
         padding: 2px 0 2px 5px;
     }
 
@@ -396,7 +393,9 @@ span>img {
         padding: 4px 0 0px 5px;
     }
 
-    .font_btn {
+    .font_btn,
+    .btn.select>.font_btn {
+        line-height: 80px;
         display: table-cell;
         width: auto;
         height: 76px;
