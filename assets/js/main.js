@@ -69,19 +69,11 @@ var Cmn = {
             }
         };
     },
-
-    handleModernizrFallback() {
-        if (!Modernizr.svg) {
-            document.querySelectorAll("img").forEach((img) => {
-                img.src = img.src.replace(/\.svg/gi, ".png");
-            });
-        }
-    },
 };
 
-window.addEventListener("pageshow", () => document.querySelectorAll(".select").forEach((el) => el.classList.remove("select")));
-window.addEventListener("hashchange", () => document.querySelectorAll(".select").forEach((el) => el.classList.remove("select")));
-
-document.addEventListener("DOMContentLoaded", () => {
-    Cmn.handleModernizrFallback();
-});
+window.addEventListener("pageshow", () =>
+    document.querySelectorAll(".select").forEach((el) => el.classList.remove("select"))
+);
+window.addEventListener("hashchange", () =>
+    document.querySelectorAll(".select").forEach((el) => el.classList.remove("select"))
+);

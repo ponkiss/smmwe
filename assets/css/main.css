@@ -1,72 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Tiny5&display=swap");
+
 /* BODY */
 
-html,
-body {
+body,
+html {
     height: 100%;
     margin: 0 auto;
-    line-height: 1.6;
+    line-height: 1.6
 }
 
-/* TEXT */
-
-a {
-    text-decoration: none;
+body {
+    background-color: #ffd300;
+    font-family: Tiny5, sans-serif
 }
 
-div,
-th,
-td,
-p,
-ul,
-ol,
-dl,
-dt,
-dd,
-img,
-form,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-article,
-aside,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section,
-span {
-    margin: 0;
-    padding: 0;
+/* CONTAINERS */
+
+.container {
+    position: relative;
+    min-height: 100%
+}
+
+.main {
+    width: 760px;
+    margin: 0 auto;
+    padding-bottom: 190px
+}
+
+/* HEADER */
+
+.title-space {
+    text-align: center;
+    margin: 50px 0 40px
+}
+
+.soft-logo {
+    display: block
+}
+
+.soft-logo,
+.soft-logo img {
+    width: 80%;
+    margin: auto
 }
 
 /* DECO */
 
 img {
-    vertical-align: top;
+    vertical-align: top
+}
+
+.block {
+    width: 100%;
+    height: 65px
+}
+
+.block.page-00 {
+    background: #ffd100 url(/assets/images/block.png) repeat top
+}
+
+.sub {
+    position: absolute;
+    width: 1085px;
+    left: 0;
+    right: 0;
+    bottom: 200px;
+    margin: auto;
+    z-index: -1
+}
+
+.subL {
+    height: 154px;
+    vertical-align: bottom;
+    padding: 0 20px 0 80px;
+    margin-right: 370px
+}
+
+.subR {
+    height: 350px;
+    margin-left: 360px
 }
 
 /* FOOTER */
+
+.index.footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0
+}
 
 .footer-link {
     min-height: 115px;
     padding: 10px 0;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.7);
-    font-size: 12px;
+    background-color: rgba(0, 0, 0, .7);
+    font-size: 12px
 }
 
 .footer-icon {
-    margin: 5px 0;
+    margin: 5px 0
 }
 
 .footer-icon div {
     display: inline-block;
-    margin-bottom: 5px;
+    margin-bottom: 5px
 }
 
 .footer-icon+span a,
@@ -74,7 +111,7 @@ img {
     margin-top: 12px;
     display: inline-block;
     padding: 0 5px;
-    color: #ddd;
+    color: #ddd
 }
 
 .footer-icon a,
@@ -84,7 +121,7 @@ img {
     border-radius: 50%;
     width: 44px;
     height: 44px;
-    vertical-align: middle;
+    vertical-align: middle
 }
 
 .footer-link .link-icon {
@@ -92,7 +129,7 @@ img {
     top: 6px;
     left: 6px;
     width: 32px;
-    height: 32px;
+    height: 32px
 }
 
 .footer .link-icon.here,
@@ -100,15 +137,555 @@ img {
     top: 3px;
     left: 3px;
     width: 38px;
-    height: 38px;
+    height: 38px
 }
 
 .site-link a {
     margin-top: 8px;
-    padding: 0 5px;
+    padding: 0 5px
 }
 
 .site-link a:first-child {
     border-right: 1px solid #ddd;
-    padding-right: 10px;
+    padding-right: 10px
+}
+
+/* FOOTER TOOLTIPS */
+
+.page-01.select:after {
+    content: "Sobre SMM: WE"
+}
+
+.page-02.select:after {
+    content: "Niveles Mundiales"
+}
+
+.page-04.select:after {
+    content: "Creadores"
+}
+
+.page-05.select:after {
+    content: "Descarga"
+}
+
+.page-06.select:after {
+    content: "Discord"
+}
+
+.page-07.select:after {
+    content: "GitHub"
+}
+
+.page-08.select:after {
+    content: "Niveles Mundiales"
+}
+
+.page-09.select:after {
+    content: "Proximamente..."
+}
+
+/* BUTTONS */
+
+.button-space01,
+.button-space02 {
+    text-align: center;
+    border-spacing: 10px
+}
+
+.button-space01 li {
+    display: inline-block;
+    width: 224px;
+    margin: 5px 2px
+}
+
+.button-space01 li a {
+    display: table;
+    width: 100%
+}
+
+.btn-01,
+.btn-05,
+.btn-06 {
+    padding: 2px 0;
+    box-shadow: inset 0 -4px 0 0 rgba(0, 0, 0, .15), 0 2px 2px 0 rgba(0, 0, 0, .2);
+    border-radius: 28px
+}
+
+.btn-01 {
+    background: #ff5154
+}
+
+.btn-05 {
+    background: #4eb91a
+}
+
+.btn-06 {
+    background: #0096dc
+}
+
+.btn-01 .anim-icon {
+    background: url(/assets/images/buttons/primary/ico_about01.png) no-repeat;
+    background-position: 50% 5px;
+    width: 100%;
+    height: 82px
+}
+
+.btn-05 .anim-icon {
+    background: url(/assets/images/buttons/primary/ico_download01.png) no-repeat;
+    background-position: 50% 5px;
+    width: 100%;
+    height: 82px
+}
+
+.btn-06 .anim-icon {
+    background: url(/assets/images/buttons/primary/ico_discord01.png) no-repeat;
+    background-position: 50% 5px;
+    width: 100%;
+    height: 82px
+}
+
+.btn-01.select {
+    background: #f13c3f;
+    box-shadow: inset 0 4px 1px 0 #c32729, 0 2px 0 0 #f13c3f;
+    padding: 4px 0 0
+}
+
+.btn-05.select {
+    background: #2caa22;
+    box-shadow: inset 0 4px 1px 0 #1e9241, 0 2px 0 0 #2caa22;
+    padding: 4px 0 0
+}
+
+.btn-06.select {
+    background: #3a91bb;
+    box-shadow: inset 0 4px 1px 0 #0385a6, 0 2px 0 0 #3a91bb;
+    padding: 4px 0 0
+}
+
+.btn-01.select .anim-icon,
+.btn-05.select .anim-icon,
+.btn-06.select .anim-icon {
+    width: 100%;
+    height: 82px
+}
+
+.btn-01.select .anim-icon {
+    background: url(/assets/images/buttons/primary/ico_about02.png) no-repeat;
+    background-position: 50% 10px
+}
+
+.btn-05.select .anim-icon {
+    background: url(/assets/images/buttons/primary/ico_download02.png) no-repeat;
+    background-position: 50% 10px
+}
+
+.btn-06.select .anim-icon {
+    background: url(/assets/images/buttons/primary/ico_discord02.png) no-repeat;
+    background-position: 50% 10px
+}
+
+.button-space02 li {
+    display: inline-block;
+    width: 224px;
+    vertical-align: middle;
+    margin: 5px 2px
+}
+
+.button-space02 li a {
+    width: 100%;
+    display: block;
+    padding: 5px 0;
+    border-spacing: 2px 0
+}
+
+.btn {
+    background: #f5f5f5;
+    box-shadow: inset 0 -4px 0 0 rgba(0, 0, 0, .15), 0 2px 2px 0 rgba(0, 0, 0, .1);
+    border-radius: 10px
+}
+
+.btn.select {
+    background: #fffadb;
+    box-shadow: inset 0 2px 1px 0 #ebd67e
+}
+
+.btn .btn-icon {
+    display: table-cell;
+    width: 40px;
+    vertical-align: middle;
+    padding: 2px 5px
+}
+
+.btn.select .btn-icon {
+    padding: 4px 5px 0
+}
+
+.page-icon {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%
+}
+
+.page-icon img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 28px;
+    height: 28px
+}
+
+.font_btn {
+    display: block;
+    width: 100%;
+    height: 55px;
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 0 -2px rgba(9, 77, 128, .2)
+}
+
+.btn .font_btn_w {
+    display: table-cell;
+    height: 45px;
+    vertical-align: middle;
+    color: #555;
+    padding: 2px 0 2px 5px;
+    text-align: left;
+    overflow: hidden
+}
+
+.btn.select .font_btn_w {
+    color: #efaa00;
+    padding: 4px 0 0 5px
+}
+
+.button-space03 {
+    display: block;
+    margin: 40px auto;
+    text-align: center
+}
+
+.button-space03 li.btn {
+    display: inline-block;
+    width: 210px;
+    margin-bottom: 5px;
+    background: #555;
+    border-radius: 20px;
+    text-align: center;
+    -webkit-background-size: 10px 10px;
+    background-size: 10px 10px;
+    background-image: -webkit-gradient(linear, left top, right bottom, from(#545454), color-stop(.15, #545454), color-stop(.15, #5b5b5b), color-stop(.35, #5b5b5b), color-stop(.35, #545454), color-stop(.65, #545454), color-stop(.65, #5b5b5b), color-stop(.85, #5b5b5b), color-stop(.85, #545454), color-stop(.1, #545454), to(#545454));
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .1)
+}
+
+.button-space03 li.btn.select {
+    background: #888
+}
+
+.button-space03>.btn .font_btn_w,
+.button-space03>.btn.select .font_btn_w {
+    color: #555;
+    padding: 1px 0;
+    font-size: 12px;
+    display: inline;
+    color: #fff
+}
+
+span>img {
+    height: 1.2rem;
+    vertical-align: middle
+}
+
+.button-space03 li a {
+    width: 100%;
+    display: block;
+    padding: 3px 0
+}
+
+/* TEXT */
+
+a {
+    text-decoration: none
+}
+
+article,
+aside,
+dd,
+div,
+dl,
+dt,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+img,
+menu,
+nav,
+ol,
+p,
+section,
+span,
+td,
+th,
+ul {
+    margin: 0;
+    padding: 0
+}
+
+/* COLORS */
+
+.page-01 {
+    background: #ff5154
+}
+
+.page-02 {
+    background: #f68900
+}
+
+.page-03 {
+    background: #fab500
+}
+
+a.page-03 {
+    background: #ffce00
+}
+
+.page-04 {
+    background: #2fa068
+}
+
+.page-05 {
+    background: #4eb91a
+}
+
+.page-06 {
+    background: #0096dc
+}
+
+.page-07 {
+    background: #2c63d3
+}
+
+.page-08 {
+    background: #654ce3
+}
+
+.page-09 {
+    background: #c38500
+}
+
+.page-01.select:before,
+.page-02.select:before,
+.page-03.select:before,
+.page-04.select:before,
+.page-05.select:before,
+.page-06.select:before,
+.page-07.select:before,
+.page-08.select:before,
+.page-09.select:before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-color: #fff transparent transparent;
+    border-style: solid;
+    border-width: 10px 10px 0
+}
+
+.page-01.select:after,
+.page-02.select:after,
+.page-03.select:after,
+.page-04.select:after,
+.page-05.select:after,
+.page-06.select:after,
+.page-07.select:after,
+.page-08.select:after,
+.page-09.select:after {
+    position: absolute;
+    padding: 5px 5px 4px;
+    background-color: #fff;
+    color: #333;
+    font-size: 15px;
+    border-radius: 5px;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width:1080px) {
+    .sub {
+        width: 100%
+    }
+
+    .subR {
+        right: 0
+    }
+
+    .subL,
+    .subR {
+        position: absolute;
+        bottom: 0
+    }
+}
+
+@media screen and (max-width:975px) {
+    .sub {
+        display: none
+    }
+}
+
+@media screen and (max-width:768px) {
+    .main {
+        height: auto;
+        width: 90%;
+        max-width: 380px;
+        padding-bottom: 0
+    }
+
+    .soft-logo+img {
+        width: 380px;
+        height: 95px
+    }
+
+    .index.footer {
+        position: static;
+        height: 174px
+    }
+
+    .sub {
+        display: block;
+        position: static;
+        bottom: 64px;
+        height: 350px;
+        width: 246px;
+        margin: auto
+    }
+
+    .subL,
+    .subR {
+        position: static;
+        margin: 0;
+        padding: 0
+    }
+
+    .title-space {
+        margin: 40px 0 20px
+    }
+
+    .button-space01,
+    .button-space02 {
+        border-spacing: 20px 0
+    }
+
+    .button-space01 li,
+    .button-space02 li {
+        display: block;
+        width: auto;
+        margin-bottom: 10px
+    }
+
+    .button-space01 li a {
+        height: 82px;
+        padding: 5px 0;
+        border-spacing: 2px 0
+    }
+
+    .btn-01 .anim-icon,
+    .btn-01.select .anim-icon,
+    .btn-05 .anim-icon,
+    .btn-05.select .anim-icon,
+    .btn-06 .anim-icon,
+    .btn-06.select .anim-icon {
+        width: 110px;
+        height: auto;
+        display: table-cell;
+        background-position: 0 10px
+    }
+
+    .btn .btn-icon,
+    .btn.select .btn-icon {
+        padding: 2px 0 2px 5px
+    }
+
+    .btn.select .btn-icon {
+        padding: 4px 0 0 5px
+    }
+
+    .btn.select>.font_btn,
+    .font_btn {
+        line-height: 80px;
+        display: table-cell;
+        width: auto;
+        height: 76px;
+        text-align: left;
+        padding: 2px 0 2px 10px
+    }
+
+    .btn.select>.font_btn {
+        padding: 4px 0 0 10px;
+        background: #ff0004
+    }
+}
+
+@media screen and (max-width:480px) {
+    .sub {
+        margin-top: 30px;
+        width: 70px;
+        height: 154px
+    }
+
+    .subR {
+        display: none
+    }
+
+    .title-space {
+        margin-top: 30px
+    }
+
+    .soft-logo,
+    .soft-logo img {
+        margin: 0 auto 6px;
+        width: 280px;
+        height: auto
+    }
+}
+
+@media screen and (max-width:768px) {
+    div[class^=bg] {
+        width: 90%;
+        max-width: 695px
+    }
+
+    .page-top[class^=page-] {
+        background-size: contain
+    }
+}
+
+@media screen and (max-width:480px) {
+    div[class^=bg] {
+        width: 95%
+    }
+
+    .page-02.select:after {
+        left: auto;
+        right: 0
+    }
+
+    .page-03.select:after {
+        left: 0
+    }
 }
